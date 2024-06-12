@@ -1,15 +1,19 @@
 
-import './App.css'
+import AddTODO from "./components/AddTODO";
+import AppName from "./components/AppName";
+import TodoItem from "./components/TodoItem";
+import "./App.css";
 
 function App() {
-  
-
   return (
     <>
-      <div className='container'>
-        <h>I am here</h></div>
+      <AppName/>
+      <div className="container">
+       <AddTODO/>
+       <TodoItem/>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
